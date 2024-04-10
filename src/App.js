@@ -1,8 +1,18 @@
+import Header from "./components/header/Header";
+import "./app.sass"
+import Categories from "./pages/Categories";
+import Home from "./pages/Home";
+import ProductPage from "./pages/ProductPage";
 
 
 function App() {
   return (
-    <h1>Hello, world!</h1>
+    <>
+    <Header/>
+      <Home/>
+      {/* <Categories/> */}
+      {/* <ProductPage/> */}
+    </>
   );
 }
 

@@ -1,0 +1,47 @@
+.header 
+    background-color: #fff
+    box-shadow: 0 4px 5px -5px rgba(0,0,0,.23)
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 10
+    
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        height: 10rem
+        align-items: center
+        transition: height .1s linear
+    &__nav
+        display: flex
+        font-size: 1.8rem
+        gap: 2.5rem
+        text-transform: uppercase
+    a
+        color: #000
+        text-decoration: none
+        &:hover 
+            text-decoration: underline
+   
+.shoppingCart
+    width: 23px
+    height: 23px
+    &__wrapper
+        cursor: pointer
+        position: relative
+    &__icons
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #b6002c
+        border-radius: 50%
+        color: #fff
+        height: 18px
+        left: 12px
+        position: absolute
+        text-align: center
+        top: -10px
+        width: 18px
+        z-index: 20
+.cont-sticky
+    height: 8rem 

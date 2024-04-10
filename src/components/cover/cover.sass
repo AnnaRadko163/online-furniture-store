@@ -1,0 +1,48 @@
+.cover
+    padding-top: 12rem
+    &__wrapper
+        grid-gap: 1.3rem
+        display: grid
+        gap: 1.3rem
+        grid-template-areas: "one two four" "one two four-low"
+        grid-template-columns: 2fr 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        height: 50rem
+        margin-top: 1.3rem
+    &-item
+        cursor: pointer
+        overflow: hidden
+        position: relative
+        &__description 
+            position: absolute
+            bottom: 2rem
+            left: 2rem
+            color: white
+            font-size: 3rem
+            font-weight: 600
+        img 
+            height: 100%
+            width: 100%
+            object-fit: cover
+            object-position: 50% 50%
+        &__overlay
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-color: rgba(0, 0, 0, 0.3)
+            transition: all 0.3s ease-in
+            &:hover
+                background-color: rgba(0, 0, 0, 0.5) 
+.grid-one 
+    grid-area: one
+
+.grid-two 
+    grid-area: two
+
+.grid-four 
+    grid-area: four
+
+.grid-four-low 
+    grid-area: four-low
