@@ -3,6 +3,7 @@ import logoImg from "../../img/LOGO.svg"
 import { FaShoppingCart } from "react-icons/fa";
 
 import {useState} from "react"
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [sticky, setSticky] = useState(false);
@@ -21,11 +22,11 @@ export default function Header() {
     <header className="header">
       <div className="container">
         <div className={`header__wrapper ${sticky ? "cont-sticky" : ""}`}>
-          <a href="/"><img src={logoImg} alt="logo"/></a>
+          <Link to='..'><img src={logoImg} alt="logo"/></Link>
           
           <div className="header__nav">
-            <a href="/">КАТЕГОРИИ</a>
-            <a href="/">СТРАНИЦА ПРОДУКТА</a>
+            <Link to="/categories">КАТЕГОРИИ</Link>
+            <Link to="/categories/product/1">СТРАНИЦА ПРОДУКТА</Link>
             <div className="shoppingCart__wrapper">
               <FaShoppingCart className="shoppingCart"/> 
               <div className="shoppingCart__icons">5</div>
