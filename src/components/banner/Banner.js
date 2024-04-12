@@ -1,6 +1,7 @@
 import React from 'react'
 import "./banner.sass"
 import itemsBanner from './BannerData'
+import { Link } from 'react-router-dom'
 
 export default function Banner(props) {
     const item = (itemsBanner.filter(e => (e.id === +(props.id))))[0]
@@ -12,7 +13,7 @@ export default function Banner(props) {
                     <div className='banner__text'>
                         <p className='banner__description'>{item.description}</p>
                         <p className='banner__specs'>{item.specs}</p>
-                        <a href='#'> <button className='banner__btn'>КУПИТЬ СЕЙЧАС</button></a>
+                        <Link to="/categories"> <button className='banner__btn'>КУПИТЬ СЕЙЧАС</button></Link>
                         
                     </div>
                     <div className='banner__img'><img src={item.img} alt='foto'/></div>

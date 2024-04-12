@@ -5,7 +5,7 @@ import CategoriesBTNS from '../components/categoriesBTNS/CategoriesBTNS';
 import { useState } from 'react';
 import items from "../components/AllData"
 import ItemMin from '../components/itemMin/ItemMin';
-
+import { Link } from "react-router-dom";
 
 
 export default function Categories() {
@@ -29,15 +29,15 @@ export default function Categories() {
     <div className='container'>
       <div className='categories__header'>
         <div className='categories__title-home'>
-          <a href='/'>
+          <Link to='/'>
             <FaAngleLeft className='categories__title-home__icon'/>Home
-          </a>
+          </Link>
           <p>{filterName}</p>
         </div>
         <CategoriesBTNS chooseCategory={chooseCategory} />
       </div>
       <div className='products-grid'>
-        {currentItems.map(e => ( <ItemMin key={e.id} description={e.description} 
+        {currentItems.map(e => ( <ItemMin key={e.id} id={e.id} description={e.description} 
         img={e.img} price={e.price}/>
         // <div key={e.id}>{e.description}</div>
         ))}

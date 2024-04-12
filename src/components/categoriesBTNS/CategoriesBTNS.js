@@ -27,7 +27,7 @@ export default function CategoriesBTNS(props) {
   return (
     <div className='filter-btns'>
         {categories.map(e => (
-            <a key={e.key} href='#'> <button  onClick={() => props.chooseCategory(e.key, e.name)} >{e.name}</button></a>
+            <div key={e.key}> <button  onClick={() => props.chooseCategory(e.key, e.name)} >{e.name}</button></div>
         ))}
         
     </div>

@@ -14,7 +14,7 @@ export default function Home() {
     <div className='container'>
       <p className='products__header'>Продукция, которой мы гордимся</p>
       <div className='products-grid'>
-        {itemsProud.map(e => ( <ItemMin key={e.id} description={e.description} 
+        {itemsProud.map(e => ( <ItemMin id={e.id} description={e.description} 
         img={e.img} price={e.price}/>
         // <div key={e.id}>{e.description}</div>
         ))}

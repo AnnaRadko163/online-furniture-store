@@ -35,7 +35,7 @@ export default function Carousel() {
 
                 <div className='carousel__wrapper' id="slider">
 
-                    {itemsCar.map(e => ( <ItemMin key={e.id} description={e.description} 
+                    {itemsCar.map(e => ( <ItemMin id={e.id} description={e.description} 
                         img={e.img} price={e.price}/>
                     ))}
                 </div>

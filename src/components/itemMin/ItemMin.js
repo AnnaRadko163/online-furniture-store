@@ -1,13 +1,16 @@
 import React from 'react'
 import "./itemMin.sass"
+import { Link } from 'react-router-dom'
 
 
 
-export default function Items( {key,description, img, price }) {
+export default function Items( {id,description, img, price }) {
+    
+    // console.log('/categories/product/' + key.toString())
     return (
-
-        <div key={key} className='product'>
-            <a href='#'>
+ 
+        <div key={id} className='product'>
+            <Link to={`/categories/product/${id}`}>
                 <div className='product__header'>
                     <img src={img} alt='foto'/>
                     </div>
@@ -15,7 +18,7 @@ export default function Items( {key,description, img, price }) {
                     <p>{description}</p>
                     <p className='product__price'>{price + " ₽"}</p>
                 </div>
-            </a>
+            </Link>
         </div>
     )
 }

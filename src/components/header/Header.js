@@ -22,7 +22,7 @@ export default function Header() {
     <header className="header">
       <div className="container">
         <div className={`header__wrapper ${sticky ? "cont-sticky" : ""}`}>
-          <Link to='..'><img src={logoImg} alt="logo"/></Link>
+          <Link to='/'><img src={logoImg} alt="logo"/></Link>
           
           <div className="header__nav">
             <Link to="/categories">КАТЕГОРИИ</Link>

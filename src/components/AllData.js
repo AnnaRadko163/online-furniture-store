@@ -86,7 +86,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: SofaDouble,
         description: "Диван двухместный",
         price: 15500,
-        otherImgs: [SofaDouble1, SofaDouble2],
+        otherImgs: [SofaDouble, SofaDouble1, SofaDouble2],
         specs:
         "Бюджетный двухместный диван-кровать. Практичный и функциональный, легко трансформируется в односпальную кровать. Идеально подходит для небольших квартир или гостевых комнат.",
         texture: "Шинил",
@@ -101,7 +101,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: BlackAndWhiteLamp,
         description: "Черно-белая лампа",
         price: 3300,
-        otherImgs: [BlackAndWhiteLamp1, BlackAndWhiteLamp2],
+        otherImgs: [BlackAndWhiteLamp, BlackAndWhiteLamp1, BlackAndWhiteLamp2],
         specs:
         "Лампа, которая вдохновлена перфорированным металлом и узорами, которые создает свет, проникая через маленькие отверстия. Контраст между грубым перфорированным металлом и гладким опаловым стеклом делает лампу простой и значимой. Благодаря своему элегантному выражению, она сияет независимо от того, включен свет или выключен.",
         texture: "Пластик",
@@ -115,7 +115,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: ChairBoom,
         description: "Традиционное кресло",
         price: 5800,
-        otherImgs: [ChairBoom1, ChairBoom2],
+        otherImgs: [ChairBoom, ChairBoom1, ChairBoom2],
         specs:
         "Кресло предназначено для отдыха, это классический датский дизайн с современным и минималистским выражением. Благодаря стильным подушкам и деревянной раме, отполированной вручную, он представляет собой идеальный скандинавский дизайн, придающий дому индивидуальность.",
         texture: "Wood",
@@ -129,7 +129,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: Comfy,
         description: "Комфортное кресло",
         price: 6500,
-        otherImgs: [Comfy1, Comfy2],
+        otherImgs: [Comfy, Comfy1, Comfy2],
         specs:
         "Данная серия, разработанная датским дизайнером Саймоном Легалдом, который является воплощением современной элегантности. Элегантные и решительные, как кончик крыла, подлокотники призывно раздвигаются, словно хотят обнять вас в мягком, уютном пространстве кресла.",
         texture: "Comfi (Комфи) ",
@@ -143,7 +143,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: Copenhagen,
         description: "Копенгаген Кресло",
         price: 6000,
-        otherImgs: [Copenhagen1, Copenhagen2],
+        otherImgs: [Copenhagen, Copenhagen1, Copenhagen2],
         specs:
         "В этой серия стульев, постарались воплотить смысл слова безопасность, тепло и удобство. Это выражение в изящных органических формах и плавных изгибах, которые обеспечивают высокий уровень комфорта и комфорта в креслах.",
         texture: "Wood",
@@ -157,7 +157,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: GoldenLamp,
         description: "Золотая лампа",
         price: 3500,
-        otherImgs: [GoldenLamp1, GoldenLamp2],
+        otherImgs: [GoldenLamp, GoldenLamp1, GoldenLamp2],
         specs:
         "Золотая лампа, разработанная в 1968 году, изначально предназначался для индустрии гостеприимства, а также для витрин и выставочных залов. Затем лампа стала популярной в частных домах, а благодаря своему стильному дизайну и большому выбору цветов в последние годы она снова стала популярной.",
         texture: "Пластик",
@@ -171,7 +171,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: LampBlue,
         description: "Лампа голубая",
         price: 2000,
-        otherImgs: [LampBlue1, LampBlue2],
+        otherImgs: [LampBlue, LampBlue1, LampBlue2],
         specs:
         "Голубая лампа, представляет собой качественную лампу с уникальным и волшебным внешним видом. Серия ламп имеет фантастическое выражение, и, особенно, когда она включена, она создает особую атмосферу в комнате, в которой она висит. Лампа идеально подходит как для обеденного стола, так и для кухонной стойки, а также для освещения гостиной.",
         texture: "Пластик",
@@ -185,7 +185,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: MatLamp,
         description: "Матовая черная лампа",
         price: 2500,
-        otherImgs: [MatLamp1, MatLamp2],
+        otherImgs: [MatLamp, MatLamp1, MatLamp2],
         specs:
         "Матовая чёрная лампа представляет собой стильное и современное осветительное устройство с матовой отделкой, которое придает ей элегантный и изысканный вид. Её поверхность имеет глухой, неотражающий блеск, что создает эффектную игру света и тени.",
         texture: "Металл",
@@ -199,7 +199,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: ModernGold,
         description: "Золотая современная лампа",
         price: 4100,
-        otherImgs: [ModernGold1, ModernGold2],
+        otherImgs: [ModernGold, ModernGold1, ModernGold2],
         specs:
         "Лампа изготовлена по специальной технологии металлизации, что делает внешний вид совершенно уникальным. Первый в своем роде. Включенная лампа прозрачна, и вы можете увидеть захватывающую игру цветов",
         texture: "Пластик",
@@ -213,7 +213,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: Other,
         description: "Маленькое кресло овчина",
         price: 4900,
-        otherImgs: [Other1, Other2],
+        otherImgs: [Other, Other1, Other2],
         specs:
         "Традиционное кресло из овчины, ограниченная серия.",
         texture: "Овечья шкура",
@@ -227,7 +227,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: PulpUnit,
         description: "Целлюлозный блок – 5 отсеков",
         price: 2500,
-        otherImgs: [PulpUnit1, PulpUnit2],
+        otherImgs: [PulpUnit, PulpUnit1, PulpUnit2],
         specs:
         "Целлюлозные агрегаты легкие и прочные, их можно использовать как горизонтально, так и вертикально. Угловые файлы и папки с кольцами, разработанные специально для бумаги формата А4, аккуратно помещаются внутри.",
         texture: "Дерево",
@@ -241,7 +241,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: Shelf,
         description: "Полка черный ясень",
         price: 2100,
-        otherImgs: [Shelf1, Shelf2],
+        otherImgs: [Shelf, Shelf1, Shelf2],
         specs:
         "Минималистичная настенная полка, разработанная с учетом функциональности и эстетики. Без лишних деталей и чистых линий эта коллекция легко и элегантно висит на стене, создавая спокойствие и обзор вещей, которые хочется поставить на полку.",
         texture: "Дерево",
@@ -255,7 +255,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: SofaCorner,
         description: "Диван угловой",
         price: 25100,
-        otherImgs: [SofaCorner1, SofaCorner2],
+        otherImgs: [SofaCorner, SofaCorner2, SofaCorner2],
         specs:
         "Роскошный и просторный угловой диван с обивкой из бархата, обеспечивающий комфортное и уютное место для отдыха и общения.",
         texture: "Флок",
@@ -270,7 +270,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
       img: BlackLamp,
       description: "Лампа «Солнце»",
       price: 3700,
-      otherImgs: [BlackLamp1, BlackLamp2],
+      otherImgs: [BlackLamp, BlackLamp1, BlackLamp2],
       specs:
       "Лампа «Солнце»,  представляет собой качественную лампу с уникальным и волшебным внешним видом. Серия «Солнце»,  имеет фантастическое выражение, и, особенно, когда она включена, она создает особую атмосферу в комнате, в которой она висит. Лампа идеально подходит как для обеденного стола, так и для кухонной стойки, а также для освещения гостиной.",
       texture: "Пластик",
@@ -284,7 +284,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: SofaYellow,
         description: "Диван желтый",
         price: 23000,
-        otherImgs: [SofaYellow1, SofaYellow2],
+        otherImgs: [SofaYellow, SofaYellow1, SofaYellow2],
         specs:
         "Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан для размеренного отдыха в кругу семьи или компании друзей!",
         texture: "Кожа",
@@ -298,7 +298,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: TableKitchen,
         description: "Стол «Фостер»",
         price: 10300,
-        otherImgs: [TableKitchen1, TableKitchen2],
+        otherImgs: [TableKitchen, TableKitchen1, TableKitchen2],
         specs:
         "Стол Фостер недорогой и очень стильный стол, выполненный в стиле 'лофт' с текстурой столешницы под натуральное дерево. Идеальный вариант для тех, кто проектирует свой интерьер в минималистическом стиле, а также ищет что-то современное и необычное.  ",
         texture: "Дерево",
@@ -312,7 +312,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: TableLamp,
         description: "Настольная лампа",
         price: 2100,
-        otherImgs: [TableLamp1, TableLamp2],
+        otherImgs: [TableLamp, TableLamp1, TableLamp2],
         specs:
         "Лампа также стала популярной в частных домах, особенно в последние годы. Это не в последнюю очередь благодаря стильному дизайну лампы и множеству цветовых вариантов, благодаря которым она подойдет куда угодно.",
         texture: "Металл",
@@ -326,7 +326,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: TableMarble,
         description: "Стол из мрамора",
         price: 20300,
-        otherImgs: [TableMarble1, TableMarble2],
+        otherImgs: [TableMarble, TableMarble1, TableMarble2],
         specs:
         "Мраморный стол - это роскошная и изысканная мебельная деталь, которая придает интерьеру элегантность и роскошь. Мрамор является прочным и долговечным материалом, который выдерживает тяжелые нагрузки и не теряет своего блеска со временем.",
         texture: "Мрамор",
@@ -340,7 +340,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: TableRound,
         description: "Стол круглый",
         price: 14100,
-        otherImgs: [TableRound1, TableRound2],
+        otherImgs: [TableRound, TableRound1, TableRound2],
         specs:
         "Круглый деревянный стол - это элегантная и универсальная мебельная деталь, которая добавляет теплоты и стиля в любое помещение. Стол имеет круглую форму, что создает приятное ощущение гармонии и равновесия в помещении. ",
         texture: "Дерево",
@@ -354,7 +354,7 @@ import WoodChair2 from "../img/products/wood_chair_2.webp"
         img: WoodChair,
         description: "Дубовый испанский стул",
         price: 3500,
-        otherImgs: [WoodChair1, WoodChair2],
+        otherImgs: [WoodChair, WoodChair1, WoodChair2],
         specs:
         "«Испанский стул», является одним из первых проектов Борге Могенсена, поэтому он является одним из его самых узнаваемых продуктов во всем мире.",
         texture: "Wood",
