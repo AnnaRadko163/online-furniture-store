@@ -46,7 +46,7 @@ export default function Cover() {
                 <Link to="/categories">
                   <div className="cover-item__overlay"></div>
                   <img src={e.src} alt="foto" />
-                  <p className="cover-item__description">e.description</p>
+                  <p className="cover-item__description">{e.description}</p>
                 </Link>
               </div>
             ))}

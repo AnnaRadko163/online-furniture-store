@@ -8,7 +8,14 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [sticky, setSticky] = useState(false);
 
-  const handleScroll = () => {
+  function openCart() {
+    document.querySelector("#cart").classList.add("cart__active")
+    document.querySelector("#cart").classList.remove('cart__none')
+    document.querySelector("#cartBac").classList.add("cart__bac__active")
+    document.querySelector("#cartBac").classList.remove('cart__bac__none')
+  }
+
+  function handleScroll () {
     if (window.scrollY > 10) {
       setSticky(true);
     } else {
@@ -27,9 +34,9 @@ export default function Header() {
           <div className="header__nav">
             <Link to="/categories">КАТЕГОРИИ</Link>
             <Link to="/categories/product/1">СТРАНИЦА ПРОДУКТА</Link>
-            <div className="shoppingCart__wrapper">
+            <div onClick={() => openCart()} className="shoppingCart__wrapper">
               <FaShoppingCart className="shoppingCart"/> 
-              <div className="shoppingCart__icons">5</div>
+              <div id="quantiti" className="shoppingCart__icons shoppingCart__icons__active">5</div>
             </div>
           </div>
         </div>

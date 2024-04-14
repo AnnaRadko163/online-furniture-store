@@ -3,7 +3,7 @@ import "./productMax.sass"
 import Carousel from '../carousel/Carousel'
 import { useState } from 'react';
 
-export default function ProductMax({item}) {
+export default function ProductMax({item, addToCart}) {
 
     const spec = [
         {
@@ -39,8 +39,8 @@ export default function ProductMax({item}) {
                         <img src={imgMain} alt={"продукт"}/>
                     </div>
                     <div className='product-max__left_imgs-small'>
-                    {item.otherImgs.map(e => ( 
-                        <img src={e} onMouseOver={() => updateImgMain(e)} alt={"продукт"}/>
+                    {item.otherImgs.map((e,i) => ( 
+                        <img key={i} src={e} onMouseOver={() => updateImgMain(e)} alt={"продукт"}/>
                     ))}
                     </div>
                 </div>
@@ -56,7 +56,7 @@ export default function ProductMax({item}) {
                         <p className='product-max__price'>{item.price + '₽'}</p>
 
                     </div>
-                    <button className='product-max__add-btn'>Добавить в корзину</button>
+                    <button onClick={() => addToCart(item)} className='product-max__add-btn'>Добавить в корзину</button>
                 </div>
             </div>
             <div className='product-max__specifications'>
