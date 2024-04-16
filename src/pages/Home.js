@@ -1,8 +1,8 @@
-import React from 'react'
+import "./home.sass"
+
 import Cover from '../components/cover/Cover'
 import items from "../components/AllData"
 import ItemMin from '../components/itemMin/ItemMin';
-import "./home.sass"
 import Banner from '../components/banner/Banner';
 import Carousel from '../components/carousel/Carousel';
 
@@ -23,9 +23,6 @@ export default function Home() {
     <Banner id="1" /> 
     <Carousel/>
     <Banner id="2" reverse="reverse"/> 
-
-
-    
     </>
   )
 }

@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom'
+
 import "./cover.sass"
+
 import Img1 from "../../img/header/home-img-1.jpg"
 import Img2 from "../../img/header/home-img-2.jpg"
 import Img3 from "../../img/header/home-img-3.jpg"
 import Img4 from "../../img/header/home-img-4.jpg"
-import { Link } from 'react-router-dom'
+
 
 
 

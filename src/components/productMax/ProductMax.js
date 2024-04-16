@@ -1,10 +1,11 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
+
 import "./productMax.sass"
+
 import Carousel from '../carousel/Carousel'
-import { useState } from 'react';
+
 
 export default function ProductMax({item, addToCart}) {
-
     const spec = [
         {
             title: "Текстура",
@@ -22,12 +23,32 @@ export default function ProductMax({item, addToCart}) {
             id: 3,
         },
     ]
-
+    const itemCopy = item
     const [imgMain, setImgMain] = useState(item.img)
+    const [itemQuantiti,setItemQuantiti] = useState(item.quantity)
+    
+    useEffect(() => {
+        itemCopy.quantity = itemQuantiti
+    })
+
     function updateImgMain (src) {
         setImgMain(src)
     }
 
+    function increaseQuantitiItem() {
+        setItemQuantiti((prev) => prev + 1)
+        
+    }
+
+    function decreaseQuantitiItem() {
+        if (itemQuantiti > 1) {
+        setItemQuantiti((prev) => prev - 1)
+        }
+    }
+    
+    function normalPrice(nbr) {
+        return String(nbr).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
+      };
 
   return (
     <div key={item.id} className='product-max' > 
@@ -49,14 +70,14 @@ export default function ProductMax({item, addToCart}) {
                     <div className='product-max__quant'>
                         <p>Количество</p>
                         <div className='product-quant__btns max'>
-                            <button>-</button>
-                            <p>{item.quantity}</p>
-                            <button>+</button>
+                            <button onClick={decreaseQuantitiItem}>-</button>
+                            <p>{itemQuantiti}</p>
+                            <button onClick={increaseQuantitiItem}>+</button>
                         </div>
-                        <p className='product-max__price'>{item.price + '₽'}</p>
+                        <p className='product-max__price'>{normalPrice(item.price*itemQuantiti) + '₽'}</p>
 
                     </div>
-                    <button onClick={() => addToCart(item)} className='product-max__add-btn'>Добавить в корзину</button>
+                    <button onClick={() => addToCart(itemCopy)} className='product-max__add-btn'>Добавить в корзину</button>
                 </div>
             </div>
             <div className='product-max__specifications'>

@@ -1,5 +1,5 @@
-import React from 'react'
 import "./cartEmpty.sass"
+
 import img from "../../img/cart/empty-cart.png"
 
 export default function CartEmpty({closeActiv}) {

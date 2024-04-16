@@ -1,27 +1,25 @@
-import React from 'react'
-import { FaAngleLeft } from "react-icons/fa";
-import "./categories.sass"
-import CategoriesBTNS from '../components/categoriesBTNS/CategoriesBTNS';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
+import { FaAngleLeft } from "react-icons/fa";
+
+import "./categories.sass"
+
+import CategoriesBTNS from '../components/categoriesBTNS/CategoriesBTNS';
 import items from "../components/AllData"
 import ItemMin from '../components/itemMin/ItemMin';
-import { Link } from "react-router-dom";
 
 
 export default function Categories() {
   const [currentItems, setCurrentItems] = useState(items)
   const [filterName, setfilterName] = useState("все")
 
-
   function chooseCategory(category, name) {
     if (category === "All") {
       setCurrentItems(items)
       setfilterName("Все")
-
     } else {
       setCurrentItems(items.filter(e => e.category === category))
       setfilterName(name)
-      
     }
   }
   

@@ -1,9 +1,11 @@
-import "./header.sass";
-import logoImg from "../../img/LOGO.svg"
-import { FaShoppingCart } from "react-icons/fa";
-
 import {useState} from "react"
 import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
+
+import "./header.sass";
+
+import logoImg from "../../img/LOGO.svg"
+
 
 export default function Header() {
   const [sticky, setSticky] = useState(false);
@@ -25,7 +27,6 @@ export default function Header() {
 
   window.addEventListener("scroll", handleScroll);
   return (
-  
     <header className="header">
       <div className="container">
         <div className={`header__wrapper ${sticky ? "cont-sticky" : ""}`}>
@@ -33,15 +34,14 @@ export default function Header() {
           
           <div className="header__nav">
             <Link to="/categories">КАТЕГОРИИ</Link>
-            <Link to="/categories/product/1">СТРАНИЦА ПРОДУКТА</Link>
+            <Link to="/categories/product/12">СТРАНИЦА ПРОДУКТА</Link>
             <div onClick={() => openCart()} className="shoppingCart__wrapper">
               <FaShoppingCart className="shoppingCart"/> 
-              <div id="quantiti" className="shoppingCart__icons shoppingCart__icons__active">5</div>
+              <div id="quantiti" className="shoppingCart__icons ">5</div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    
+    </header> 
   )
 }

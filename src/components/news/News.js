@@ -1,4 +1,3 @@
-import React from 'react'
 import "./news.sass"
 
 export default function News() {

@@ -1,9 +1,11 @@
-import React from 'react'
-import "./carousel.sass"
-import items from "../AllData"
-import ItemMin from '../itemMin/ItemMin';
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+
+import "./carousel.sass"
+
+import items from "../AllData"
+import ItemMin from '../itemMin/ItemMin';
+
 
 export default function Carousel() {
     const itemsCar = items.slice(8, 20)
@@ -32,14 +34,11 @@ export default function Carousel() {
                         </button>
                     </div>
                 </div>
-
                 <div className='carousel__wrapper' id="slider">
-
                     {itemsCar.map(e => ( <ItemMin key={e.id} id={e.id} description={e.description} 
                         img={e.img} price={e.price}/>
                     ))}
                 </div>
-
             </div>
         </div>
     </>
