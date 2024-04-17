@@ -46,3 +46,17 @@
 
 .grid-four-low 
     grid-area: four-low
+
+@media (max-width: 790px)
+    .cover
+        &__wrapper 
+            grid-template-areas: "one two" "four four-low"
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr
+
+@media (max-width: 650px)
+    .cover 
+        padding-top: 7rem
+
+
+

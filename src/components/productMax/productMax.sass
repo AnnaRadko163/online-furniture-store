@@ -138,5 +138,56 @@
             height: 3rem
             padding-top: 5px
             width: 3rem
-     
+
+@media (max-width: 800px)
+     .product-max
+        &__wrapper 
+            margin-bottom: 3rem
+        &__quant 
+            flex-direction: column
+            margin-bottom: 2rem
+        &__right
+            padding: 10% 4rem 3rem
+            &__desc 
+            margin-bottom: 3rem
+        &__add-btn 
+            font-size: 1rem
+@media (max-width: 900px)
+    .product-max
+        &__name 
+            font-size: 2.5rem
+        &__right__desc 
+            font-size: 1.4rem
+@media (max-width: 650px)
+    .product-max 
+        padding-top: 10rem
+        &__spec__title 
+            font-size: 1.7rem
+        &__specifications 
+            height: 9rem
+            margin-bottom: 4rem
+        &__wrapper 
+            flex-direction: column
+        &__quant 
+            flex-direction: row
+        &__name 
+            left: 33%
+        
+        &__left 
+            width: auto
+            display: flex
+            &_imgs-small 
+                flex-direction: column
+                width: 40%
+                padding: 0
+                img 
+                    height: auto
+                    width: 58%
+        &__right 
+            margin-top: 4rem
+            padding: 5% 3rem 3rem
+            width: auto
+            &__desc 
+                font-size: 1.7rem
+                margin-bottom: 3rem
     
