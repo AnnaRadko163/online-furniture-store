@@ -50,3 +50,22 @@
         text-align: right
     &__priceItem
         font-size: 2.4rem
+
+
+@media (max-width: 450px)
+    .cart
+        &__item 
+            grid-template-columns: 1fr
+            height: auto
+            svg
+                align-self: flex-end
+        &__img img 
+            width: 60%
+        &__name 
+            font-size: 2rem
+        &__middle 
+            align-items: center
+            padding-bottom: 0
+        &__right
+            padding-top: 0
+
