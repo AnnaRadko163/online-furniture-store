@@ -40,16 +40,15 @@ export default function Cart({cartItem, setCartItem}) {
     cart = false;
   } else {
     cart = cartItem.map(e => (e))
-    document.querySelector("#quantiti").classList.add("shoppingCart__icons__active")
-    document.querySelector("#quantiti").textContent = `${cartItem.length}`
   }
   function openAllCartItems(cart) {
     return (
       <>
         <div className='cart__full-div'>
           <div className='cart__full'>
-            {cart.map(e => (<CartItem key={e.id}item={e} setCartItem={setCartItem} 
-            changeTotalPrice={changeTotalPrice} deleteInTotalPrice={deleteInTotalPrice} normalPrice={normalPrice}/>))}
+            {cart.map(e => (<CartItem key={e.id} item={e} setCartItem={setCartItem} 
+            cartItem={cartItem} changeTotalPrice={changeTotalPrice}
+             deleteInTotalPrice={deleteInTotalPrice} normalPrice={normalPrice}/>))}
           </div>
         </div>
         <div className='cart__subtotal'>

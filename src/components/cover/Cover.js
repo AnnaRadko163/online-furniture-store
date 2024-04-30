@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import {memo} from "react"
 
 import "./cover.sass"
 
@@ -10,7 +11,8 @@ import Img4 from "../../img/header/home-img-4.jpg"
 
 
 
-export default function Cover() {
+
+function Cover() {
   const imgData = [
     {
       id: 1,
@@ -39,6 +41,8 @@ export default function Cover() {
 
   ]
 
+
+
   return (
     <>
       <div className="cover">
@@ -59,3 +63,5 @@ export default function Cover() {
     </>
   )
 }
+
+export default memo(Cover)

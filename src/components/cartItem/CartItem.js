@@ -2,14 +2,16 @@ import { useState,  useEffect} from 'react'
 
 import "./cartItem.sass"
 
-export default function CartItem({item, setCartItem, changeTotalPrice, deleteInTotalPrice, normalPrice}) {
+export default function CartItem({item, setCartItem, changeTotalPrice, deleteInTotalPrice, normalPrice, cartItem}) {
   const [itemQuantiti,setItemQuantiti ] = useState(item.quantity)
   const [itemPrice, setItemPrice] = useState(0)
   
   function deleteItem() {
-    setCartItem((pred) => pred.filter(e => e.id !== item.id))
-    document.querySelector("#quantiti").classList.remove("shoppingCart__icons__active")
+    const listitems = cartItem.filter((e) => e.id !== item.id )
+    setCartItem(listitems);
+    localStorage.setItem("todoloist", JSON.stringify(listitems))
     deleteInTotalPrice(item.id)
+
   }
   function increaseQuantitiItem() {
     setItemQuantiti((prev) => prev + 1)

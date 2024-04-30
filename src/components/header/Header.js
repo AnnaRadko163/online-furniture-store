@@ -1,15 +1,26 @@
 import {useState} from "react"
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
-
+import { useEffect } from "react";
 import "./header.sass";
 
 import logoImg from "../../img/LOGO.svg"
 
 
-export default function Header() {
+export default function Header({cartItem}) {
   const [sticky, setSticky] = useState(false);
   const [mobileNav, setMobileNav] = useState(false)
+  const [quantiti, setQuantiti] = useState('')
+
+
+  useEffect(() => {
+    if(cartItem.length > 0) {
+      setQuantiti(() => ('shoppingCart__icons shoppingCart__icons__active'))
+    } else {
+      setQuantiti('shoppingCart__icons')
+    }
+  },[cartItem])
+  
 
   function openCart() {
     document.querySelector("#cart").classList.add("cart__active")
@@ -61,7 +72,7 @@ export default function Header() {
             <Link onClick={scrollToTop} to="/categories/product/12" className="link">СТРАНИЦА ПРОДУКТА</Link>
             <div onClick={() => openCart()} className="shoppingCart__wrapper">
               <FaShoppingCart className="shoppingCart"/> 
-              <div id="quantiti" className="shoppingCart__icons ">5</div>
+              <div id="quantiti" className={quantiti}>{cartItem.length}</div>
             </div>
             <div className="hamburger-menu">
               <i
