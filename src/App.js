@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import {lazy, Suspense} from 'react'
 
 import "./app.sass"
@@ -28,25 +29,24 @@ function App() {
       localStorage.setItem("todoloist", JSON.stringify(listitems))
     }
   };
-
+// basename='/online-furniture-store'
 
   return (
-    <Router>  
-        <Header cartItem={cartItem}/>
-        <Suspense fallback={<div className='loading'>Загрузка…</div>} >
-        <Routes>
-          
-          <Route path="/" element={<Home/>}/>
-          <Route path="/categories" element={<Categories/>}/>
-            {items.map(e => ( <Route key={e.id} path={`/categories/product/${e.id}`}  element={
-            <ProductMax key={e.id} item={e} addToCart={addToCart}/>  }/>))}
-          <Route path="*" element={<div className='loading'>Ошибка в адресе ссылки</div>}/>
-        </Routes>
-        </Suspense>
-        <Cart cartItem={cartItem} setCartItem={setCartItem} /> 
-        <News/>
-        <Footer/>
-    </Router>
+    <>
+      <Header cartItem={cartItem}/>
+      <Suspense fallback={<div className='loading'>Загрузка…</div>} >
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/categories" element={<Categories/>}/>
+          {items.map(e => ( <Route key={e.id} path={`/categories/product/${e.id}`}  element={
+          <ProductMax key={e.id} item={e} addToCart={addToCart}/>  }/>))}
+        <Route path="*" element={<div className='loading'>Ошибка в адресе ссылки</div>}/>
+      </Routes>
+      </Suspense>
+      <Cart cartItem={cartItem} setCartItem={setCartItem} /> 
+      <News/>
+    <Footer/>
+    </>
   );
 }
 
